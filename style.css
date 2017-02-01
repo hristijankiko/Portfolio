@@ -1,0 +1,165 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.intro {
+  background: url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=9d6386e08229a2aa09eccf001076c3ab") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.intro h1 {
+  position: absolute;
+  font-size: 45px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 10px;
+  border: 5px solid white;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro span {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  width: 100px;
+  background-color: #151515;
+  border-radius: 5px;
+  margin-left: 100px;
+  transition: 0.4s;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0px 5px 5px;
+}
+
+.menu {
+  position: fixed;
+  cursor: pointer;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+}
+.menu input {
+  display: none;
+}
+.menu .bar1, .menu .bar2, .menu .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 10px;
+  transition: 0.4s;
+}
+.menu input:checked ~ .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.menu input:checked ~ .bar2 {
+  opacity: 0;
+}
+.menu input:checked ~ .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.menu input:checked ~ nav {
+  display: block;
+}
+.menu input:checked ~ nav {
+  margin-left: -40px;
+}
+
+.portfolio {
+  background-color: #333333;
+}
+.portfolio h1 {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 35px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.portfolio ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.portfolio ul li {
+  margin: 20px auto;
+}
+.portfolio ul li figure {
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+  margin: 0;
+  overflow: hidden;
+}
+.portfolio ul li figure img {
+  height: 100%;
+  width: 300px;
+}
+.portfolio ul li figure figcaption {
+  position: absolute;
+  top: 250px;
+  transition: 0.4s;
+}
+.portfolio ul li figure:hover figcaption {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.portfolio ul li figure:hover figcaption h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+.portfolio ul li figure:hover figcaption p {
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: #222222;
+}
+.contact h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 35px;
+}
+.contact .social {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .social img {
+  display: inline;
+  margin: 25px;
+}
+
+@media screen and (min-width: 830px) {
+  .intro h1 span {
+    white-space: nowrap;
+    display: inline;
+  }
+}
