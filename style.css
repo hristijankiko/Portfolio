@@ -10,7 +10,7 @@ body {
 }
 
 .intro {
-  background: url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=9d6386e08229a2aa09eccf001076c3ab") no-repeat center center fixed;
+  background: url("./images/hero-img.jpeg") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -162,5 +162,11 @@ nav a {
   .intro h1 span {
     white-space: nowrap;
     display: inline;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro h1 {
+    font-size: 35px;
   }
 }
