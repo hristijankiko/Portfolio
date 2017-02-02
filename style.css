@@ -5,7 +5,7 @@ a {
 
 body {
   color: white;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -29,6 +29,27 @@ body {
 }
 .intro span {
   display: block;
+}
+
+.toPortfolio {
+  position: absolute;
+  font-size: 35px;
+  cursor: pointer;
+  left: 50%;
+  background-color: rgba(14, 14, 14, 0.8);
+  padding: 5px;
+  border-radius: 4px;
+  transform: translate(-50%, 0%);
+  bottom: 5%;
+  transition: all 0.2s ease-in-out;
+}
+
+.toPortfolio:hover {
+  box-shadow: 0 5px 15px rgba(14, 14, 14, .6);
+}
+
+.arrow-circle-bottom {
+  margin-bottom: -8px;
 }
 
 nav {
@@ -168,5 +189,8 @@ nav a {
 @media screen and (max-width: 400px) {
   .intro h1 {
     font-size: 35px;
+  }
+  .toPortfolio {
+    font-size: 26px;
   }
 }
