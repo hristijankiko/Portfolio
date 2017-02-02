@@ -108,8 +108,10 @@ nav a {
 }
 .portfolio h1 {
   box-sizing: border-box;
+  letter-spacing: 0.1em;
   width: 100%;
   text-align: center;
+  text-shadow: 3px 3px #111111;
   font-size: 35px;
   padding-top: 10px;
   padding-left: 10px;
@@ -125,21 +127,26 @@ nav a {
 }
 .portfolio ul li {
   margin: 20px auto;
+  box-shadow: 5px 5px 5px #151515;
+  border-radius: 10px;
 }
 .portfolio ul li figure {
   position: relative;
   height: 250px;
   cursor: pointer;
   margin: 0;
+  border-radius: 10px;
   overflow: hidden;
 }
 .portfolio ul li figure img {
   height: 100%;
   width: 300px;
+  border-radius: 10px;
 }
 .portfolio ul li figure figcaption {
   position: absolute;
   top: 250px;
+  border-radius: 10px;
   transition: 0.4s;
 }
 .portfolio ul li figure:hover figcaption {
@@ -169,6 +176,8 @@ nav a {
   margin: 0;
   padding: 10px;
   font-size: 35px;
+  letter-spacing: 0.1em;
+  text-shadow: 3px 3px #111111;
 }
 .contact .social {
   margin: 0 auto;
@@ -191,6 +200,10 @@ nav a {
     font-size: 35px;
   }
   .toPortfolio {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
   }
 }
